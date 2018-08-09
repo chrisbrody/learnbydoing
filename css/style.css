@@ -8,17 +8,13 @@ body {
   background: url();
 }
 
-
+/*LOGO*/
 #ca-logo {
 
   width:250px;
 }
-@media (min-width: 1250px) {
-  #ca-logo {
-    width:200px;
-  }
-}
 
+/*MAIN PAGE TEXT*/
 #focus {
   background: #1abc9c;
   padding: 20px;
@@ -51,21 +47,6 @@ hr {
   right: 0;
 }
 
-.stats {
-  overflow: hidden;
-  margin-bottom: 1em;
-  height: 100px;
-  list-style: none;
-  padding: 5px 0;
-  font-size: 16px;
-  font-weight: 900;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-.stats li {
-  width: 35%;
-  float: left;
-}
 
 .target {
   color: #fff;
@@ -173,8 +154,14 @@ textarea {
   white-space: pre-wrap;
 }
 
-.results {
-  font-family: Roboto;
+#complete-wrap.hide {
+  display: none;
+}
+#complete-wrap img {
+  width: 100%;
+}
+#complete-wrap #score {
+  text-align: left;
 }
 
 .settings {
@@ -200,10 +187,3 @@ textarea {
   color: #ccf;
 }
 
-.twitter a {
-  color: rgba(255, 0, 0, 0.7);
-  text-decoration: none;
-}
-.twitter a:hover {
-  text-decoration: underline;
-}

@@ -133,28 +133,16 @@ function reset(){
   wpm = 0;
   current_string = letters.substring(index, index + character_length);
   $("#target").text(current_string);
+  $("#incomplete-wrap").slideDown();
+  $("#complete-wrap").slideUp();
+  $("#focus").html("Find out if you can create code! Start by typing a &lt;")
 }
 
 function finished(){
-  // document.write("<div id='win'>Congratulations!\nYou created " + 13 + " HTML tags" + "\nWith only :" + errors + " errors</div>");
-  alert("winner")
+  $("#incomplete-wrap").slideUp();
   // CREATE POPUP BANNER FOR SUCCESS HERE
+  $("#complete-wrap").slideDown();
+  $("#focus").html("You just created the coding structue need for any website!");
+  $("#score").html("<p>13 HTML tags created, with only " + errors + " errors.</p> <p>Professional developers often make mistakes, the more mistakes you make and correct the faster you can learn the more you will know and the better developer you will become.</p> <p>To try again, hit the reset button at the bottom of your screen.</p>")
 }
 
-var window_focus;
-
-$(window).focus(function() {
-    window_focus = true;
-}).blur(function() {
-  window_focus = false;
-});
-
-// DISPLAY / HIDE ALERT
-// $(document).ready(function(){
-//   if(window_focus){
-//     $("#focus").slideUp();
-//   }
-//   $(window).focus(function() {
-//     $("#focus").slideUp();
-//   });
-// });

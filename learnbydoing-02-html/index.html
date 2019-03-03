@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <!-- META DATA -->
+  <meta charset="utf-8">
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- TITLE -->
+  <title>Learn by Doing | Coding with Codify Academy</title>
+  
+  <!-- FONTS -->
+  <link href='https://fonts.googleapis.com/css?family=Cutive+Mono|Roboto:400,900,700' rel='stylesheet' type='text/css'/>
+
+  <!-- BOOTSTRAP.CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- LOGO -->
+  <div id="logo">
+    <img src="img/" alt="Code2Learn logo" id="ca-logo">
+  </div>
+  
+  <h1 id="output"></h1>
+  <p id="focus">Practice your basic HTML elements to gain muscle memory! Start by typing &lt;</p>
+
+  <!-- WILL HIDE WHEN THE GAME IS COMPLETED -->
+  <div id="incomplete-wrap">
+    <div class="target mono" id="target"></div>
+
+    <!-- DISPLAY FOR WHAT THE USER TYPES -->
+    <div id="your-attempt" class="mono your-attempt" placeholder="Your text will appear here"></div>
+    
+    <div class="results">
+      <ul class="stats">
+        <li>Timer <span id="timer">0</span></li>
+        <li>Errors <span id="errors">0</span></li>
+      </ul>
+    </div>
+
+    <hr style="clear:both;" />
+
+    <div>
+    <!-- WHAT THE USER SEES TO TYPE -->
+    <textarea name="" id="input_text" cols="50" rows="10">&lt;p&gt;&lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;p&gt;&lt;/p&gt; &lt;ul&gt;&lt;/ul&gt; &lt;ul&gt;&lt;/ul&gt; &lt;ul&gt;&lt;/ul&gt; &lt;li&gt;&lt;/li&gt; &lt;li&gt;&lt;/li&gt; &lt;li&gt;&lt;/li&gt; &lt;a&gt;&lt;/a&gt; &lt;a&gt;&lt;/a&gt; &lt;a&gt;&lt;/a&gt; &lt;img&gt; &lt;img&gt; &lt;img&gt; &lt;div&gt;&lt;/div&gt; &lt;div&gt;&lt;/div&gt; &lt;div&gt;&lt;/div&gt;</textarea>
+      <!--  -->
+    </div>
+  </div>
+  
+  <!-- WILL DISPLAY WHEN THE GAME IS COMPLETED -->
+  <div id="complete-wrap" class="hide">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div id="score"></div>
+        </div>
+        <div class="col-md-6">
+          <img src="img/code.png" alt="Structure needed to create a website">
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+
+<div class="settings">
+  <a href="#" id="reset">Reset</a> | <a href="#" id="pause">Pause II</a>
+</div>
+
+
+  <!-- JQUERY.JS -->
+  <script src="js/jquery.js"></script>
+  <!-- BOOTSTRAP.JS -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- CUSTOM JS -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

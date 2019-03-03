@@ -47,15 +47,29 @@ hr {
   right: 0;
 }
 
+.stats {
+  overflow: hidden;
+  margin-bottom: 1em;
+  height: 100px;
+  list-style: none;
+  padding: 5px 0;
+  font-size: 16px;
+  font-weight: 900;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.stats li {
+  width: 50%;
+  float: left;
+}
 
 .target {
+  overflow-x: scroll;
+  overflow-y: hidden;
   color: #fff;
   text-align: left;
-  font-size: 32px;
-  min-width: 300px;
+  font-size: 20px;
   min-height: 40px;
-  width: 600px;
-  display: inline-block;
   position: relative;
   white-space: pre;
   background: #333;
@@ -65,7 +79,7 @@ hr {
 .target:after {
   content: '';
   position: absolute;
-  width: 20px;
+  width: 10px;
   height: 2px;
   background: #f00;
   left: 10px;
@@ -86,6 +100,14 @@ hr {
   text-align: left;
   position: absolute;
   color: #fff;
+}
+@media screen and (min-width: 650px) {
+  .target {
+    display: inline-block;
+    min-width: 300px;
+    overflow: hidden;
+    width: 600px;
+  }
 }
 
 @-webkit-keyframes cursor_flash {

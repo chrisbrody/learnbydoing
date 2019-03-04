@@ -142,4 +142,4 @@ function finished(){
 }
 
 // FURTHER ADJUSTMENTS
-$("#your-attempt input").hide();
+// $("#your-attempt input").hide();

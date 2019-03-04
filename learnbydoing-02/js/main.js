@@ -142,4 +142,8 @@ function finished(){
 }
 
 // FURTHER ADJUSTMENTS
-// $("#your-attempt input").hide();
+
+$("#learnbydoing").on("pageshow", function( event ) {
+        $("#learnbydoing").find('input:first').focus();
+} );
+$("#your-attempt input").hide();

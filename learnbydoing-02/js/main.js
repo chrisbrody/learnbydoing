@@ -142,8 +142,10 @@ function finished(){
 }
 
 // FURTHER ADJUSTMENTS
+var target = document.getElementsByTagName("input")[0];
 
-$("#learnbydoing").on("pageshow", function( event ) {
-        $("#learnbydoing").find('input:first').focus();
-} );
-$("#your-attempt input").hide();
+if (event.target != target) {
+    target.focus();
+    target.click();
+}
+

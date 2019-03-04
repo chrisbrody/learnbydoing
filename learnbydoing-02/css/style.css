@@ -10,7 +10,6 @@ body {
 
 /*LOGO*/
 #ca-logo {
-
   width:250px;
 }
 
@@ -22,6 +21,14 @@ body {
   font-size: 30px;
   color: #fff;
 }
+
+@media screen and (max-width: 650px) {
+  #focus {
+    font-size: 20px;
+  }
+}
+
+/*show open keyboard button*/
 
 .mono {
   font-family: "Cutive Mono", monospace;
@@ -38,13 +45,6 @@ hr {
   border: none;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   margin: 0 auto;
-}
-
-.results {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 .stats {
@@ -173,6 +173,7 @@ textarea {
   border: 1px solid #555;
   max-width: 600px;
   margin: 2em auto;
+  text-align: left;
   white-space: pre-wrap;
 }
 

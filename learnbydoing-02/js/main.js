@@ -140,3 +140,6 @@ function finished(){
     $("#score").html("<p>18 HTML tags created, with only " + errors + " errors in " + timer + " seconds, Nice Work!</p> <p>These elements you just created are some of the most used elements in HTML. The P tag is for paragraphs.  The ul & li go together to make lists.  The anchor or a tag is used to link to another website or another page on your website.  Hopefully the img tag is self explanatory to include images to any website.  Finally the div tag is used to divide up content you want to display on a website.</p> <p>To practice again, hit the reset button at the bottom of your screen.</p>")
   }
 }
+
+// FURTHER ADJUSTMENTS
+$("#your-attempt input").hide();
